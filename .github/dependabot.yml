@@ -1,0 +1,18 @@
+# Weekly update pull requests, grouped so they are few: the CI actions
+# (pinned to commit SHAs) and both Cargo lockfiles. A release must be a
+# week old before an update to it is proposed, so a broken one has time
+# to be yanked first; security updates are not delayed.
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule: { interval: weekly }
+    cooldown: { default-days: 7 }
+    groups:
+      actions: { patterns: ["*"] }
+  - package-ecosystem: cargo
+    directories: ["/", "/firmware"]
+    schedule: { interval: weekly }
+    cooldown: { default-days: 7 }
+    groups:
+      crates: { patterns: ["*"] }

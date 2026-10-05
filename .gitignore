@@ -1,0 +1,22 @@
+# Build output, both workspaces.
+/target/
+/firmware/target/
+
+# Firmware images: build outputs, never sources.
+*.uf2
+*.elf
+
+# The emulator checkout tools/setup-emulator.sh makes.
+/tools/rp2040js/
+
+# Session recordings (hil-host --record, vision --record) are yours, not
+# the repository's.
+*.wire
+*.perc
+/recordings/
+
+# Rerun recordings and editor and OS leftovers.
+*.rrd
+.DS_Store
+.idea/
+.vscode/

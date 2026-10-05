@@ -1,0 +1,36 @@
+rigrs
+Copyright 2026 Prakhar Aggarwal
+
+rigrs is licensed under either of
+
+  * the Apache License, Version 2.0 (LICENSE-APACHE), or
+  * the MIT license (LICENSE-MIT),
+
+at your option.
+
+Third-party material in this repository
+---------------------------------------
+
+firmware/cyw43-firmware/nvram_rp2040.bin, nvram_rp2040.txt
+  Board settings for the CYW43439 radio on the Raspberry Pi Pico W and
+  Pico 2 W. Copied unchanged from the embassy project's cyw43-firmware
+  folder (https://github.com/embassy-rs/embassy/tree/main/cyw43-firmware),
+  which takes its blobs from georgerobotics/cyw43-driver. Licensed under
+  the Infineon Permissive Binary License 1.0, whose text is beside them in
+  LICENSE-permissive-binary-license-1.0.txt. The MIT and Apache-2.0
+  licences above do not cover these two files.
+
+tools/patches/rp2040js-sev-fix.patch
+  A patch to wokwi/rp2040js (https://github.com/wokwi/rp2040js), MIT
+  License, Copyright (c) 2021 Uri Shaked. Its context lines quote that
+  project's source. tools/setup-emulator.sh clones rp2040js and applies it.
+
+firmware/build-support/memory-rp2040.x, memory-rp2350.x
+  Linker memory maps following the embassy-rp examples
+  (https://github.com/embassy-rs/embassy, MIT OR Apache-2.0).
+
+Firmware images built from this repository link the dependencies in
+firmware/Cargo.lock, each under its own licence; the Wi-Fi builds also
+embed the CYW43439 firmware from the cyw43-firmware crate (Infineon
+Permissive Binary License 1.0). Pass those notices on with any image you
+distribute.
