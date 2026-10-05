@@ -8,11 +8,12 @@ follow [Semantic Versioning](https://semver.org).
 
 ### Added
 
-- The first public version: firmware for the RP2040 and RP2350 on
-  embassy (`pico-blink` through `pico-robot`), the shared `no_std` robot
-  maths (`sim-core`), the hardware-in-the-loop protocol and host, drivers
+- The first public version: the shared `no_std` robot maths
+  (`sim-core`) and arm control (`arm`), drivers on `embedded-hal` 1.0
   (MPU6050, quadrature encoder, PCA9685, OV7670, N20 joint), the
-  simulator, vision, phone teleoperation and the design notes in `docs/`.
+  hardware-in-the-loop protocol and host, the simulator, vision, phone
+  teleoperation, reference firmware for the RP2040 and RP2350 on embassy
+  (`pico-blink` through `pico-robot`) and the design notes in `docs/`.
 - Licensed under MIT OR Apache-2.0.
 
 ### Known issues
