@@ -175,9 +175,9 @@ dependencies = [
 
 [[package]]
 name = "cortex-m"
-version = "0.7.8"
+version = "0.7.9"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f985670a83ddb4c96174f696987458ae26fe3d801faf7263b56a2b2252c2f76f"
+checksum = "844b9697e922c99847eed515c6eb6d101e7ce62ff556fcaec243798291427ee8"
 dependencies = [
  "bare-metal",
  "bitfield 0.13.2",
@@ -201,22 +201,22 @@ dependencies = [
 
 [[package]]
 name = "cortex-m-rt"
-version = "0.7.6"
+version = "0.7.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9c439b23bf18154d8a634543caf1ee73cceb723f2902f7ea243634159a00fd47"
+checksum = "f1f0f27b7ecbb9fad6702c8764d11d0b7245437de1575e34e39b2af95382f096"
 dependencies = [
  "cortex-m-rt-macros",
 ]
 
 [[package]]
 name = "cortex-m-rt-macros"
-version = "0.7.6"
+version = "0.7.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "061a75f3e7f3f01d649668d68e02d0ef92c7041a9c97b8fe6bc354ddbf40822d"
+checksum = "05cf9e0f899304705b85fda7b178fc383f2529ec2479693248b600e530d2327a"
 dependencies = [
  "proc-macro2",
  "quote",
- "syn 2.0.119",
+ "syn 3.0.3",
 ]
 
 [[package]]
@@ -270,7 +270,7 @@ dependencies = [
  "cortex-m-rt",
  "embassy-futures",
  "embassy-net-driver-channel",
- "embassy-sync 0.8.0",
+ "embassy-sync",
  "embassy-time",
  "embedded-hal 1.0.0",
  "embedded-hal-async",
@@ -369,7 +369,7 @@ checksum = "b0641612053b2f34fc250bb63f6630ae75de46e02ade7f457268447081d709ce"
 dependencies = [
  "embassy-futures",
  "embassy-hal-internal 0.4.0",
- "embassy-sync 0.8.0",
+ "embassy-sync",
  "embedded-hal 0.2.7",
  "embedded-hal 1.0.0",
  "embedded-hal-async",
@@ -444,7 +444,7 @@ checksum = "347bc855bdbdf50ed9c5a1d80e8204badb0ba149b8732dde38e1e9708ed9d313"
 dependencies = [
  "document-features",
  "embassy-net-driver",
- "embassy-sync 0.8.0",
+ "embassy-sync",
  "embassy-time",
  "embedded-io-async 0.7.0",
  "embedded-nal-async",
@@ -467,7 +467,7 @@ checksum = "a07d2eb9f05a6fc876500949856ea1be40773d866d8cb99384f72d0ae4568c16"
 dependencies = [
  "embassy-futures",
  "embassy-net-driver",
- "embassy-sync 0.8.0",
+ "embassy-sync",
 ]
 
 [[package]]
@@ -484,7 +484,7 @@ dependencies = [
  "embassy-embedded-hal",
  "embassy-futures",
  "embassy-hal-internal 0.5.0",
- "embassy-sync 0.8.0",
+ "embassy-sync",
  "embassy-time",
  "embassy-time-driver",
  "embassy-time-queue-utils",
@@ -506,20 +506,6 @@ dependencies = [
  "rp2040-boot2",
  "sha2-const-stable",
  "smart-leds",
-]
-
-[[package]]
-name = "embassy-sync"
-version = "0.7.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "73974a3edbd0bd286759b3d483540f0ebef705919a5f56f4fc7709066f71689b"
-dependencies = [
- "cfg-if",
- "critical-section",
- "embedded-io-async 0.6.1",
- "futures-core",
- "futures-sink",
- "heapless 0.8.0",
 ]
 
 [[package]]
@@ -580,7 +566,7 @@ dependencies = [
  "bitflags 2.13.1",
  "embassy-futures",
  "embassy-net-driver-channel",
- "embassy-sync 0.8.0",
+ "embassy-sync",
  "embassy-time",
  "embassy-usb-driver",
  "embedded-io-async 0.7.0",
@@ -1343,7 +1329,7 @@ dependencies = [
  "embassy-futures",
  "embassy-net",
  "embassy-rp",
- "embassy-sync 0.7.2",
+ "embassy-sync",
  "embassy-time",
  "embassy-usb",
  "firmware-build-support",
