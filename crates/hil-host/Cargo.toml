@@ -16,7 +16,7 @@ blob = { path = "../blob" }
 hil-protocol = { path = "../hil-protocol", features = ["host"] }
 sim-run = { path = "../sim-run" }
 serialport = "4"
-rerun = "0.35"
+rerun = "0.38"
 
 # `odom_view` parses a format string that lives in `firmware/pico-odom`,
 # and nothing checks the two against each other. `test = true` makes

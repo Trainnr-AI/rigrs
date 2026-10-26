@@ -13,7 +13,7 @@ repository.workspace = true
 # remembering them.
 
 [dependencies]
-rerun = "0.35"
+rerun = "0.38"
 sim-core = { path = "../sim-core" }
 
 # No unsafe here. `forbid`, not `deny`: it cannot be switched off locally

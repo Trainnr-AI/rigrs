@@ -8,7 +8,7 @@ repository.workspace = true
 [dependencies]
 sim-core = { path = "../sim-core" }
 # Pinned to match the installed viewer binary (rerun-cli 0.35.0).
-rerun = "0.35"
+rerun = "0.38"
 
 [lints]
 workspace = true

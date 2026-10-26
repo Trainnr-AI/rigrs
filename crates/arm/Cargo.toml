@@ -41,7 +41,7 @@ heapless = "0.9"
 [dev-dependencies]
 # Only the viewer needs these. The library itself draws nothing and must
 # stay free of them — `cargo test -p arm` should never build a GUI.
-rerun = "0.35"
+rerun = "0.38"
 belief-viz = { path = "../belief-viz" }
 
 # No unsafe here. `forbid`, not `deny`: it cannot be switched off locally
