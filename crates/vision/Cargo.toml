@@ -7,7 +7,7 @@ repository.workspace = true
 
 [dependencies]
 nokhwa = { version = "0.10", features = ["input-native"] }
-rerun = "0.35"
+rerun = "0.38"
 anyhow = "1"
 # Already in the tree via usls; named directly so `session` can write
 # and read the JPEGs that make a replay watchable.
