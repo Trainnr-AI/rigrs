@@ -49,7 +49,7 @@ embassy-rp = { version = "0.10", default-features = false, features = ["rt", "ti
 embassy-time = "0.5"
 embassy-futures = "0.1"
 embassy-usb = "0.6"
-embassy-sync = "0.7"
+embassy-sync = "0.8"
 cortex-m = "0.7"
 cortex-m-rt = "0.7"
 panic-halt = "1.0"
